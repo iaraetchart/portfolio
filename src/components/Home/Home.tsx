@@ -1,5 +1,5 @@
 import "./Home.css";
-import profileImage from "../../assets/png/IaraPhoto.png";
+import profileImage from "../../assets/png/IaraPhoto1.png";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
 
