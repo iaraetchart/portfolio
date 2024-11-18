@@ -1,0 +1,185 @@
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    flex-direction: column;
+}
+
+.skills .content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.skills .card-wrapper {
+    position: relative;
+}
+
+.skills .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    gap: 0.6rem;
+    border-radius: 1rem;
+    width: 180px;
+    height: 120px;
+    position: relative;
+    border: 2px solid var(--main-color);
+    
+}
+
+.skills .card:hover {
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+    color: black;
+}
+
+.skills .image {
+    font-size: 4.5rem;
+}
+
+.skills .skill-name {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--main-color);
+    text-align: center;
+    transition: color 0.3s;
+}
+
+.skills .card:hover .skill-name {
+    color: #fff;
+}
+.skills .filter-buttons {
+    position: relative;
+    width: 400px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .filter-buttons a {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 100px;
+    height: 50px;
+    z-index: 1;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+    color: var(--main-color);
+    transition: color 0.3s;
+}
+
+.skills .filter-buttons a.active {
+    color: #fff; 
+}
+
+.skills .filter-buttons span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background: var(--main-color);
+    border-radius: 8px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+/* Ubicación de la posición del indicador de fondo */
+.skills .filter-buttons a:nth-child(1).active ~ span {
+    left: 0;
+}
+
+.skills .filter-buttons a:nth-child(2).active ~ span {
+    left: 100px;
+}
+
+.skills .filter-buttons a:nth-child(3).active ~ span {
+    left: 200px;
+}
+
+.skills .filter-buttons a:nth-child(4).active ~ span {
+    left: 300px;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 1300px) {
+    .skills .card {
+        width: 130px;
+    }
+    .skills .image {
+        width: 50px;
+    }
+    .skills .skill-name {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills .content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr); 
+        gap: 20px;
+        margin: 0 auto;
+    }
+    .skills .card {
+        width: 120px;
+    }
+    .skills .image {
+        width: 70px;
+    }
+    .skills .skill-name {
+        font-size: 1.4rem;
+    }
+    .skills .filter-buttons a{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills h3{
+        font-size: 4rem;
+    }
+    .skills .card {
+        width: 100px;
+    }
+    .skills .image {
+        font-size: 4rem;
+    }
+    .skills .skill-name {
+        font-size: 1.2rem;
+    }
+    .skills .filter-buttons{
+        width: 350px;
+    }
+    .skills .filter-buttons span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 87.5px;
+        height: 100%;
+        background: var(--main-color);
+        border-radius: 8px;
+        transition: 0.5s;
+        box-shadow: 0 0 10px var(--main-color);
+    }
+    .skills .filter-buttons a{
+        font-size: 1.3rem;
+        width: 87.5px;
+    }
+}
+

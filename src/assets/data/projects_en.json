@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Spellsy",
+        "img": "img/spellsy.webp",
+        "description": "This React-based Wordle clone replicates the original game's experience, offering users six attempts to guess a secret word with visual feedback on letter placement and presence.",
+        "techs": [
+            7,
+            9
+        ],
+        "urls": {
+            "code": "https://github.com/iaraetchart/spellsy",
+            "view": "https://spellsy.vercel.app"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Windly",
+        "img": "img/windly.webp",
+        "description": "This React web app fetches weather data from an API, showing temperature, atmospheric conditions, and other variables for various locations in a clear and user-friendly interface.",
+        "techs": [
+            7,
+            9
+        ],
+        "urls": {
+            "code": "https://github.com/iaraetchart/windly",
+            "view": "https://windly-nine.vercel.app"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Lisper",
+        "img": "img/lisper.webp",
+        "description": "A simple Express app that fetches secrets from an external API (It may take up to 1 minute to load the page due to the hosting provider's policies, but rest assured, it will load)",
+        "techs": [
+            1,
+            3
+        ],
+        "urls": {
+            "code": "https://github.com/iaraetchart/lisper",
+            "view": "https://lisper-oxt5.onrender.com/"
+        }
+    }
+]

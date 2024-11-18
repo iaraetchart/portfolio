@@ -1,0 +1,139 @@
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.projects h3{
+    margin-top: 5rem;
+}
+
+.projects-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    place-items: center;
+    gap: 8rem;
+    row-gap: 5rem;
+    width: -webkit-fill-available;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 3rem;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--main-color);
+    transition: 0.3s;
+    height: 550px;
+}
+
+.project-card:hover {
+    box-shadow: 
+        0 0 25px var(--main-color),
+        0 0 50px var(--main-color);
+    transform: scale(1.02);
+}
+
+.project-card img {
+    max-width: 300px;
+    border-radius: 2em;
+    object-fit: cover;
+}
+
+.project-card h5 {
+    font-size: 3rem;
+}
+
+.project-card p {
+    font-size: 1.6rem;
+}
+
+.project-data{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-data p{
+    height: 92px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.project-data .btts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.project-techs {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.project-techs .tech-icon {
+    font-size: 3rem;
+}
+
+@media screen and (max-width:1300px){ 
+    .projects {
+        gap: 2rem;
+    }
+    .project-card {
+        width: 450px;
+    }
+    .project-card img {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects {
+        gap: 2rem;
+    }
+    .project-card {
+        width: 400px;
+        height: 600px;
+    }
+    .project-card img {
+        max-width: 350px;
+    }
+    .project-data p{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projects h3{
+        font-size: 4rem;
+    }
+    .project-card {
+        width: 350px;
+        height: 550px;
+    }
+    .project-card img {
+        max-width: 300px;
+    }
+    .project-data p{
+        font-size: 1.2rem;
+    }
+
+
+}

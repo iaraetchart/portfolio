@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "Node", "filter": "back" },
+  { "id": 2, "name": "Python", "filter": "back" },
+  { "id": 3, "name": "Express", "filter": "back" },
+  { "id": 4, "name": "SQL Server", "filter": "back" },
+  { "id": 5, "name": "MySQL", "filter": "back" },
+  { "id": 6, "name": "PostgreSQL", "filter": "back" },
+  { "id": 14, "name": "SQLite", "filter": "back" },
+  { "id": 15, "name": "SQLAlchemy", "filter": "back" },
+  { "id": 7, "name": "React", "filter": "front" },
+  { "id": 8, "name": "TypeScript", "filter": "front" },
+  { "id": 9, "name": "Tailwind", "filter": "front" },
+  { "id": 10, "name": "Bootstrap", "filter": "front" },
+  { "id": 11, "name": "Git", "filter": "other" },
+  { "id": 12, "name": "Postman", "filter": "other" },
+  { "id": 13, "name": "PowerBI", "filter": "other" }
+]

@@ -1,0 +1,49 @@
+{
+    "navbar": {
+        "home": "Inicio",
+        "about": "Sobre mi",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "contact": "Contacto",
+        "lng": "ES"
+    },
+    "home": {
+        "greeting": "Hola, soy ",
+        "position": "una ",
+        "description": "Creo soluciones web limpias, funcionales y fáciles de usar, diseñadas para ofrecer experiencias digitales atractivas. Con una combinación de creatividad y atención al detalle, mi objetivo es transformar ideas en resultados visualmente atractivos y eficientes. ¡Construyamos algo increíble juntos!",
+        "button-cv": "Descargar CV"
+    },
+    "about": {
+        "greeting": "Hola! Soy ",
+        "presentation": ", una desarrolladora web Full Stack apasionada por convertir ideas en realidades digitales.",
+        "about": "Acerca de mí",
+        "info": "Inicié mi carrera en el ámbito de las TI como Analista de Datos, rol en el que me desempeñé durante más de 2 años. Durante este tiempo, desarrollé un profundo entendimiento sobre la importancia de la organización, la automatización de procesos y la visualización de información de manera clara y efectiva. Participé en diversos proyectos que contribuyeron significativamente a optimizar los flujos de trabajo de la empresa, aumentando la eficiencia y reduciendo costos. Mi trabajo se centró principalmente en el backend, utilizando herramientas como MySQL y PostgreSQL para crear consultas, Python para desarrollar scripts, y Power BI para generar reportes automáticos. Mi curiosidad y pasión por aprender me llevaron a explorar el mundo del desarrollo web, donde actualmente estoy trabajando en varios proyectos paralelos para perfeccionar mis habilidades.",
+        "games": "Videojuegos",
+        "movies": "Peliculas",
+        "drawing": "Dibujo",
+        "music": "Música"
+    },
+    "skills":
+    {
+        "all": "Todas",
+        "other": "Otras"
+    }
+    ,
+    "projects": {
+        "btn-view": "Vista",
+        "btn-code": "Código"
+    },
+    "contact": {
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "subject": "Asunto",
+        "requiredFields": "Por favor complete este campo.",
+        "invalidEmail": "Email inválido.",
+        "send": "Enviar",
+        "formSubmitted": "Mensaje enviado con éxito!",
+        "formError": "Fallo al enviar. Por favor vuelva a intentarlo.",
+        "sending": "Enviando...",
+        "builtBy": "Desarrollado por Iara Etchart",
+        "made": "Hecho con"
+    }
+}

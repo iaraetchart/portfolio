@@ -1,0 +1,119 @@
+.about {
+    display: flex;
+    background: var(--second-bg-color);
+}
+
+.about .container{
+display: flex;
+align-items: center;
+justify-content: center;
+
+gap: 10rem;
+}
+
+.about-img img {
+    width: 32vw;
+    transition: 0.4s ease-in-out;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    text-align: center;
+}
+.about-content p span {
+    color: var(--main-color);
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.about-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+.about-info div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.about-hobbies{
+    display: flex;
+    text-align: center;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+.about .social-icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+.about .social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+
+.about .social-icons a:hover {
+    color: var(--text-color);
+    transform: scale(1.2);
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+}
+
+.about .tooltip {
+    position: absolute;
+    top: 120%;
+    background-color: var(--bg-secundary-color);
+    opacity: 0.9;
+    color: inherit;
+    padding: 5px 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    z-index: 10;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    pointer-events: none;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+  
+.about .social-icons a:hover .tooltip {
+    visibility: visible;
+}
+
+@media screen and (max-width:1300px){ 
+    .about{
+        padding-bottom: 8rem;
+    }
+    .about-img{
+       display: none;
+    }
+    .about .social-icons a {
+    width: 5rem;
+    height: 5rem;
+}
+}
