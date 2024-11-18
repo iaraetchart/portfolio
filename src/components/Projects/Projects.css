@@ -2,13 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .projects h3{
-    margin-top: 5rem;
+    margin-top: 9rem;
 }
 
 .projects-box {
@@ -96,6 +95,9 @@
     .projects {
         gap: 2rem;
     }
+    .projects h3{
+        margin-top: 3rem;
+    }
     .project-card {
         width: 450px;
     }
@@ -107,6 +109,9 @@
 @media screen and (max-width: 768px) {
     .projects {
         gap: 2rem;
+    }
+    .projects h3{
+        margin-top: 2rem;
     }
     .project-card {
         width: 400px;
@@ -123,6 +128,9 @@
 @media screen and (max-width: 480px) {
     .projects h3{
         font-size: 4rem;
+    }
+    .projects h3{
+        margin-top: 2rem;
     }
     .project-card {
         width: 350px;
