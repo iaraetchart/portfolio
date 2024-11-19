@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar'
 import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects'
 import Contact from './components/Contact/Contact.tsx'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     <Skills/>
     <Projects/>
     <Contact/>
+    <Analytics/>
     </>
   )
 }
