@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./About.css";
-import illustration from "../../assets/png/illustration.png";
+import illustration from "../../assets/webp/illustration.webp";
 import { FaPaintBrush, FaMusic } from "react-icons/fa";
 import { RiMovie2Fill } from "react-icons/ri";
 import { BiSolidJoystick } from "react-icons/bi";
