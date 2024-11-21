@@ -29,7 +29,6 @@ const About = () => {
             <h4>Hobbies</h4>
             <div className="social-icons">
               <a
-                href="#Games"
                 aria-label="Games"
                 onMouseEnter={() => setHoveredHobby("Games")}
                 onMouseLeave={() => setHoveredHobby(null)}
@@ -40,7 +39,6 @@ const About = () => {
                 )}
               </a>
               <a
-                href="#Movie"
                 aria-label="Movies"
                 onMouseEnter={() => setHoveredHobby("Movies")}
                 onMouseLeave={() => setHoveredHobby(null)}
@@ -51,7 +49,6 @@ const About = () => {
                 )}
               </a>
               <a
-                href="#Drawing"
                 aria-label="Drawing"
                 onMouseEnter={() => setHoveredHobby("Drawing")}
                 onMouseLeave={() => setHoveredHobby(null)}
@@ -62,7 +59,6 @@ const About = () => {
                 )}
               </a>
               <a
-                href="#music"
                 aria-label="Music"
                 onMouseEnter={() => setHoveredHobby("Music")}
                 onMouseLeave={() => setHoveredHobby(null)}
