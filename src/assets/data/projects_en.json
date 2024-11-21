@@ -29,16 +29,16 @@
     },
     {
         "id": 3,
-        "name": "Lisper",
-        "img": "img/lisper.webp",
-        "description": "A simple Express app that fetches secrets from an external API (It may take up to 1 minute to load the page due to the hosting provider's policies, but rest assured, it will load)",
+        "name": "Kitchen Vault API",
+        "img": "img/kitchen-vault.webp",
+        "description": "An API that allows users to manage a collection of recipes efficiently. It provides endpoints to retrieve, filter, add, update, and delete recipes. Each recipe includes detailed information.",
         "techs": [
             1,
             3
         ],
         "urls": {
-            "code": "https://github.com/iaraetchart/lisper",
-            "view": "https://lisper-oxt5.onrender.com/"
+            "code": "https://github.com/iaraetchart/kitchen-vault",
+            "view": "https://documenter.getpostman.com/view/37710958/2sAYBRGZng"
         }
     }
 ]

@@ -164,13 +164,13 @@
         font-size: 1.2rem;
     }
     .skills .filter-buttons{
-        width: 350px;
+        width: 320px;
     }
     .skills .filter-buttons span {
         position: absolute;
         top: 0;
         left: 0;
-        width: 87.5px;
+        width: 80px;
         height: 100%;
         background: var(--main-color);
         border-radius: 8px;
@@ -179,7 +179,7 @@
     }
     .skills .filter-buttons a{
         font-size: 1.3rem;
-        width: 87.5px;
+        width: 80px;
     }
 }
 

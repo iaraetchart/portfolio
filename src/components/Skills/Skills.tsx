@@ -98,7 +98,7 @@ const Skills: React.FC = () => {
         {/* Renderiza el estilo dinámico según la resolución */}
         <span
           style={{
-            left: `${activeIndex * (isMobile ? 87.5 : 100)}px`,
+            left: `${activeIndex * (isMobile ? 80 : 100)}px`,
           }}
         ></span>
       </div>
