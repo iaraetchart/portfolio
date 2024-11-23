@@ -40,5 +40,47 @@
             "code": "https://github.com/iaraetchart/kitchen-vault",
             "view": "https://documenter.getpostman.com/view/37710958/2sAYBRGZng"
         }
+    },
+    {
+        "id": 4,
+        "name": "Kitchen Vault API 4",
+        "img": "img/kitchen-vault.webp",
+        "description": "An API that allows users to manage a collection of recipes efficiently. It provides endpoints to retrieve, filter, add, update, and delete recipes. Each recipe includes detailed information.",
+        "techs": [
+            1,
+            3
+        ],
+        "urls": {
+            "code": "https://github.com/iaraetchart/kitchen-vault",
+            "view": "https://documenter.getpostman.com/view/37710958/2sAYBRGZng"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Kitchen Vault API 5",
+        "img": "img/kitchen-vault.webp",
+        "description": "An API that allows users to manage a collection of recipes efficiently. It provides endpoints to retrieve, filter, add, update, and delete recipes. Each recipe includes detailed information.",
+        "techs": [
+            1,
+            3
+        ],
+        "urls": {
+            "code": "https://github.com/iaraetchart/kitchen-vault",
+            "view": "https://documenter.getpostman.com/view/37710958/2sAYBRGZng"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Kitchen Vault API 6",
+        "img": "img/kitchen-vault.webp",
+        "description": "An API that allows users to manage a collection of recipes efficiently. It provides endpoints to retrieve, filter, add, update, and delete recipes. Each recipe includes detailed information.",
+        "techs": [
+            1,
+            3
+        ],
+        "urls": {
+            "code": "https://github.com/iaraetchart/kitchen-vault",
+            "view": "https://documenter.getpostman.com/view/37710958/2sAYBRGZng"
+        }
     }
 ]
