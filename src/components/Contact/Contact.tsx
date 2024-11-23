@@ -3,7 +3,6 @@ import { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import emailjs from "@emailjs/browser";
 import { FaLinkedin, FaGithub, FaReact } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 
@@ -27,19 +26,19 @@ const Contact: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
+  
     if (isSubmitting) return;
-
+  
     setIsSubmitting(true);
-
+  
     const formData = new FormData(form.current!);
     const values = Object.fromEntries(formData.entries());
-
+  
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,6}$/;
     const requiredFieldsError = t(contact.requiredFields);
     const validationErrors: { [key: string]: string } = {};
-
-    // Validar campos
+  
+    // Validación
     Object.entries(values).forEach(([field, value]) => {
       if (value.toString().trim() === "") {
         validationErrors[field] = requiredFieldsError;
@@ -50,19 +49,28 @@ const Contact: React.FC = () => {
         validationErrors[field] = t(contact.invalidEmail);
       }
     });
-
+  
     if (Object.keys(validationErrors).length === 0) {
       try {
-        await emailjs.sendForm(
-          import.meta.env.VITE_SERVICE_ID!,
-          import.meta.env.VITE_TEMPLATE_ID!,
-          form.current!,
-          import.meta.env.VITE_PUBLIC_KEY!
-        );
-        toast.success(t(contact.formSubmitted));
-        form.current!.reset();
-        setErrors({});
+        const response = await fetch("https://api-send-mail-beta.vercel.app/api/send-email", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        });
+  
+        if (response.ok) {
+          const result = await response.json();
+          toast.success(result.message);
+          form.current!.reset();
+          setErrors({});
+        } else {
+          const errorData = await response.json();
+          toast.error(errorData.message || t(contact.formError));
+        }
       } catch (error) {
+        console.error("Error al enviar el correo:", error);
         toast.error(t(contact.formError));
       } finally {
         setIsSubmitting(false);
@@ -71,7 +79,7 @@ const Contact: React.FC = () => {
       setErrors(validationErrors);
       setIsSubmitting(false);
     }
-  };
+  };  
 
   return (
     <section className="contact" id="contact">
