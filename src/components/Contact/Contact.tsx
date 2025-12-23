@@ -3,11 +3,12 @@ import { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { FaLinkedin, FaGithub, FaReact } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaReact, FaHeart } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 
 const Contact: React.FC = () => {
-  const { t } = useTranslation("global");
+  const { t, i18n } = useTranslation("global");
+  const language = i18n.language;
 
   const contact = {
     name: "contact.name",
@@ -176,6 +177,7 @@ const Contact: React.FC = () => {
             <p>{t("contact.made")}</p>
             <FaReact title="React" size={24} />
             <SiTypescript title="TypeScript" size={22} />
+            <FaHeart title={language === 'es' ? 'Amor' : 'Love'} size={20} style={{ color: '#fff' }} />
           </div>
         </div>
       </footer>

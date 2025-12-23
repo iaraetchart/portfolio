@@ -5,8 +5,8 @@ import projects_en from '../../assets/data/projects_en.json';
 import projects_es from '../../assets/data/projects_es.json';
 import skills from '../../assets/data/skills.json'; 
 import { IProject, ISkill } from './Project.types';
-import { FaNodeJs, FaPython, FaReact, FaGit } from 'react-icons/fa';
-import { SiExpress, SiMysql, SiPostgresql, SiTypescript, SiTailwindcss, SiBootstrap, SiPowerbi, SiPostman, SiSqlite, SiSqlalchemy } from 'react-icons/si';
+import { FaNodeJs, FaPython, FaReact } from 'react-icons/fa';
+import { SiExpress, SiMysql, SiTypescript, SiTailwindcss, SiBootstrap, SiPowerbi, SiJest, SiNextdotjs, SiMongodb, SiOpenai, SiRedis, SiVercel } from 'react-icons/si';
 
 const Projects: React.FC = () => {
   const { t, i18n } = useTranslation('global');
@@ -21,18 +21,18 @@ const Projects: React.FC = () => {
     Node: <FaNodeJs />,
     Python: <FaPython />,
     Express: <SiExpress />,
-    'SQL Server': <SiMysql />,
-    MySQL: <SiMysql />,
-    PostgreSQL: <SiPostgresql />,
-    SQLite: <SiSqlite />,
-    SQLAlchemy: <SiSqlalchemy />,
+    MongoDB: <SiMongodb />,
+    SQL: <SiMysql />,
+    Redis: <SiRedis />,
+    'Next.js': <SiNextdotjs />,
     React: <FaReact />,
     TypeScript: <SiTypescript />,
     Tailwind: <SiTailwindcss />,
     Bootstrap: <SiBootstrap />,
-    Git: <FaGit />,
-    Postman: <SiPostman />,
+    'Gen AI': <SiOpenai />,
+    Jest: <SiJest />,
     PowerBI: <SiPowerbi />,
+    Vercel: <SiVercel />,
   };
 
   return (

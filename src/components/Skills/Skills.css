@@ -30,13 +30,33 @@
     height: 120px;
     position: relative;
     border: 2px solid var(--main-color);
-    
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.skills .card::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: var(--main-color);
+    transform: translate(-50%, -50%);
+    transition: width 0.4s, height 0.4s;
+    z-index: -1;
+}
+
+.skills .card:hover::after {
+    width: 300px;
+    height: 300px;
 }
 
 .skills .card:hover {
-    box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color);
     color: black;
+    border-color: var(--main-color);
 }
 
 .skills .image {
@@ -92,8 +112,7 @@
     height: 100%;
     background: var(--main-color);
     border-radius: 8px;
-    transition: 0.5s;
-    box-shadow: 0 0 10px var(--main-color);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Ubicación de la posición del indicador de fondo */
@@ -174,8 +193,7 @@
         height: 100%;
         background: var(--main-color);
         border-radius: 8px;
-        transition: 0.5s;
-        box-shadow: 0 0 10px var(--main-color);
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     }
     .skills .filter-buttons a{
         font-size: 1.3rem;

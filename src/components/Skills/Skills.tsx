@@ -6,20 +6,20 @@ import {
   FaNodeJs,
   FaPython,
   FaReact,
-  FaGit,
 } from 'react-icons/fa';
 import {
   SiExpress,
   SiMysql,
-  SiPostgresql,
   SiTypescript,
   SiTailwindcss,
   SiBootstrap,
   SiPowerbi,
-  SiPostman,
-  SiSqlite,
-  SiSqlalchemy,
-  SiMicrosoftsqlserver,
+  SiJest,
+  SiNextdotjs,
+  SiMongodb,
+  SiOpenai,
+  SiRedis,
+  SiVercel,
 } from 'react-icons/si';
 
 const Skills: React.FC = () => {
@@ -44,18 +44,18 @@ const Skills: React.FC = () => {
     Node: <FaNodeJs />,
     Python: <FaPython />,
     Express: <SiExpress />,
-    'SQL Server': <SiMicrosoftsqlserver />,
-    MySQL: <SiMysql />,
-    PostgreSQL: <SiPostgresql />,
-    SQLite: <SiSqlite />,
-    SQLAlchemy: <SiSqlalchemy />,
+    MongoDB: <SiMongodb />,
+    SQL: <SiMysql />,
+    Redis: <SiRedis />,
+    'Next.js': <SiNextdotjs />,
     React: <FaReact />,
     TypeScript: <SiTypescript />,
     Tailwind: <SiTailwindcss />,
     Bootstrap: <SiBootstrap />,
-    Git: <FaGit />,
-    Postman: <SiPostman />,
+    'Gen AI': <SiOpenai />,
+    Jest: <SiJest />,
     PowerBI: <SiPowerbi />,
+    Vercel: <SiVercel />,
   };
 
   const filteredSkills = skillsData.filter(

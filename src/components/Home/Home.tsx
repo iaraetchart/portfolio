@@ -25,10 +25,20 @@ const Home = () => {
         <p>{t("home.description")}</p>
 
         <div className="social-icons">
-          <a href="https://linkedin.com/in/iara-etchart/" aria-label="LinkedIn">
+          <a 
+            href="https://linkedin.com/in/iara-etchart/" 
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaLinkedin size={24} />
           </a>
-          <a href="https://github.com/iaraetchart" aria-label="GitHub">
+          <a 
+            href="https://github.com/iaraetchart" 
+            aria-label="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithub size={24} />
           </a>
         </div>

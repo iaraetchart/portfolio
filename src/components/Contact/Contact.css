@@ -76,14 +76,34 @@
   text-align: center;
   border-radius: 50%;
   margin: 0 10px;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer .social a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: var(--main-color);
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s;
+  z-index: -1;
+}
+
+.footer .social a:hover::before {
+  width: 100%;
+  height: 100%;
 }
 
 .footer .social a:hover {
-  transform: scale(1.2) translateY(-10px);
   background-color: var(--main-color);
   color: #fff;
-  box-shadow: 0 0 25px var(--main-color);
+  border-color: var(--main-color);
 }
 
 .footer ul {
